@@ -4,7 +4,10 @@
   "description": "Jekko is an AdonisJS Helper Package which helps you mark currently active items in your navigation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js"
+  },
+  "directories": {
+    "test": "test"
   },
   "repository": {
     "type": "git",
