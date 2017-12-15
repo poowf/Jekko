@@ -1,0 +1,23 @@
+{
+  "name": "@poowf/jekko",
+  "version": "1.0.1",
+  "description": "Jekko is an AdonisJS Helper Package which helps you mark currently active items in your navigation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poowf/Jekko.git"
+  },
+  "keywords": [
+    "jekko",
+    "adonisjs"
+  ],
+  "author": "Poowf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poowf/Jekko/issues"
+  },
+  "homepage": "https://github.com/poowf/Jekko#readme"
+}
