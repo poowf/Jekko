@@ -1,6 +1,6 @@
 {
   "name": "@poowf/jekko",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Jekko is an AdonisJS Helper Package which helps you mark currently active items in your navigation",
   "main": "index.js",
   "scripts": {

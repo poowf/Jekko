@@ -11,8 +11,6 @@ class Jekko {
     view.share({
         request,
         isActiveRoute: function (route, output = 'active') {
-            console.log('fired')
-            console.log(output)
             return (Route.url(route) == request.url()) ? output : this.safe(``)
         }
     })
