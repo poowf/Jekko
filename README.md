@@ -6,7 +6,7 @@
 
 Jekko is an AdonisJS Helper Package which helps you mark currently active items in your navigation.
 
-It takes inspiration from the [Ekko](https://github.com/laravelista/Ekko) packaage for Laravel hence Jekko.
+It takes inspiration from the [Ekko](https://github.com/laravelista/Ekko) package for Laravel hence Jekko.
 
 ## Installation
 
@@ -15,7 +15,6 @@ From the command line:
 ```bash
 npm install --save poowf/jekko
 ```
-
 
 You will need to include the service provider in start/app.js
 
@@ -86,6 +85,10 @@ isActiveRoute($routeName, $output = "active")
 
 If the current route is `home`, function `isActiveRoute('home')` would return *string* `active`.
 
+_The `*` wildcard can be used for resource routes_
+
+Function `isActiveRoute('user.*')` would return string `active` for any current route which begins with `user`.
+
 ### isActiveURL
 
 Compares given URL path with current URL path.
@@ -122,6 +125,10 @@ areActiveRoutes(array $routeNames, $output = "active")
 
 If the current route is `product.index` or `product.show`, function `areActiveRoutes(['product.index', 'product.show'])` would return *string* `active`.
 
+_The `*` wildcard can be used for resource routes_
+
+Function `areActiveRoutes(['user.*', 'product.*'])` would return string `active` for any current route which begins with `user` or `product`.
+
 ### areActiveURLs
 
 Compares given array of URL paths with current URL path.
@@ -138,7 +145,7 @@ If the current URL path is `/product` or `/product/create`, function `areActiveU
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Poowf
+Copyright (c) 2018 Poowf
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
